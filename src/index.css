@@ -1,0 +1,354 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 375px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+html{
+  font-size: 62.5%;
+  
+}
+
+.header{
+  display: grid;
+  grid-template-columns: auto 40px;
+  max-height: 44px;
+  padding-left: 21px ;
+  padding-right: 18px;
+}
+
+.header__container{
+  display: flex;
+  align-content: space-between;
+}
+
+.mainContainer{
+  margin-top: 29px;
+  --background-color: pink;
+}
+
+.mainContainer__title{
+  display: grid;
+  grid-template-columns: 10% auto 15%;
+  height: 24px;
+  margin-bottom: 22px;
+}
+
+.mainContainer__title--text{
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.mainContainer__image{
+  width: 24px;
+  height: 24px;
+}
+
+.mainContainer__balance{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 86px;
+  margin: 22px 39px 0 36px;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+  padding: 12px 55px 12px 12px;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+
+.mainContainer__balance--label{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mainContainer__balance--amount{
+  color:#bb64c8;
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.mainContainer__options{
+  background-color: #783183 ;
+  height: 116px;
+  display: flex;
+  padding: 40px 36px;
+  justify-content: space-around;
+  position: relative;
+  top:-15px;
+  z-index: 1;
+  width: 375px;
+}
+
+.mainContainer__box{
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContainer__imageOption{
+  align-items: center;
+  height: 22px;
+}
+
+.mainContainer__box--image{
+  width: 22px;
+  height: 22px;
+}
+
+.mainContainer__box--label{
+  color:white;
+  font-size: 0.8rem;
+  padding: 6px;
+}
+
+.mainContainer__pay{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 186px;
+  margin: 22px 39px 0 36px;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+  padding: 7px 55px 12px 12px;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+  top:-60px;
+}
+
+.mainContainer__pay--label{
+  font-size: 1.4rem;
+}
+
+.mainContainer__pay--day{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mainContainer__pay--dateButton{
+  display: flex;
+  flex-direction: row;
+  width: 276px;
+}
+
+.mainContainer__pay--date{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer__pay--amount{
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.mainContainer__pay--button{
+  background-color: #5acaee;
+  width: 120px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 63px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  color:white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mainContainer__achievements{
+  display: flex;
+  flex-direction: row;
+  width: 276px;
+  height: 30px;
+}
+
+.mainContainer__achievements--row{
+  display: flex;
+  font-size: 1.2rem;
+  padding-top: 5px;
+  width: 50%;
+}
+
+.mainContainer__achievements--contaninerImage{
+  align-items: center;
+  height: 22px;
+}
+
+.mainContainer__achievements--image{
+  width: 15px;
+  height: 15px;
+}
+
+.mainContainer__achievements--label{
+  margin-left: 10px;
+}
+
+.mainContainer__achievements--amount{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: end;
+  width: 49%;
+}
+
+.mainContainer__titleMovements{
+  position: relative;
+  top:-40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainContainer__titleMovements--label{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.mainContainer__titleMovements--link{
+  font-size: 1.5rem;
+  color: #22a8d2;
+  padding-top: 8px;
+}
+
+.mainContainer__movements{
+  width: 375px;
+  height: 60px;
+  position: relative;
+  top:-20px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.5px solid #bbbbbb;
+}
+
+.mainContainer__movements--row{
+  display: flex;
+  font-size: 1.2rem;
+  padding-left: 30px;
+  padding-top: 6px;
+  width: 60%;
+  height: 55px;
+}
+
+.mainContainer__movements--contaninerImage{
+  padding: 4px;
+  height: 45px;
+  width: 45px;
+}
+
+.mainContainer__movements--image{
+  width: 40px;
+  height: 40px;
+}
+
+.mainContainer__movements--label{
+  font-size: 1.4rem;
+  padding-left: 15px;
+}
+
+.mainContainer__movements--labelConcept{
+  font-size: 1.2rem;
+}
+
+.mainContainer__movements--amount{
+  display: flex;
+  font-size: 1.4rem;
+  padding-left: 30px;
+  padding-top: 4px;
+  width: 30%;
+  height: 55px;
+  justify-content: flex-end;
+
+}
+
+.mainContainer__movements--labelInfo{
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.mainContainer__navigation{
+  display: flex;
+  height: 24px;
+  width: 375px;
+  padding-left: 36px;
+  margin-bottom: 22px;
+  justify-content: space-between;
+}
+
+.mainContainer__navigation--text{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-right: 24px;
+  color: #22a8d2;
+}
+
+.title{
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-left: 36px;
+}
+
+.mainContainer__availableBalance{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 120px;
+  margin: 17px 37px 24px 38px;
+  border-width: 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+  padding: 26px 48px 24px 19px;
+  background-color: white;
+}
+
+.mainContainer__availableBalance--label{
+  font-size: 1.6rem;
+}
+
+.mainContainer__input{
+  font-weight: bold;
+  border-radius: 4px;
+  border: solid 1px #5acaee;
+  width: 300px;
+  height: 40px;
+  margin: 12px 37px 12px 38px;
+  padding: 7px 249px 10px 18px;
+}
+
+.mainContainer__secondTitle{
+  font-size: 1.4rem;
+  padding-left: 40px;
+  padding-top: 14px;
+}
+
+.mainContainer__information{
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  align-content: center;
+  display: flex;
+  padding-left: 30px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mainContainer__button{
+  background-color:#5acaee;
+  padding: 10px 98px 13px 99px;
+  border-radius: 4px;
+  height: 52px;
+  width: 310px;
+  margin: 32.5px 32px 30px 32px;
+  color:white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
