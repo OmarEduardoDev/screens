@@ -20,21 +20,21 @@ class Main extends React.Component{
             
             <div className="mainContainer">
                 
-                {this.state.screen == '' ?
+                {this.state.screen === '' ?
                     <div>
                         <div className="title">
                             Pantallas
                         </div>
                         
-                        <div className="mainContainer__button" onClick = {() => this.screen('home')}>
+                        <div style={{cursor:"pointer"}} className="mainContainer__button" onClick = {() => this.screen('home')}>
                             Home
                         </div>
 
-                        <div className="mainContainer__button" onClick = {() => this.screen('disp')}>
+                        <div style={{cursor:"pointer"}} className="mainContainer__button" onClick = {() => this.screen('disp')}>
                             Disposición
                         </div>
                     </div>
-                    : this.state.screen == 'home' ? 
+                    : this.state.screen === 'home' ? 
                         <Home/>
                     : <Disposicion/>
                 }

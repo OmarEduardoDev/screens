@@ -24,6 +24,7 @@ class Home extends React.Component{
         <header className='header'>
           <picture onClick={()=>this.reload()}>
           <img 
+            style={{cursor:"pointer"}}
             className="mainContainer__image"
             src={left} 
             alt="Foto de perfil"/>

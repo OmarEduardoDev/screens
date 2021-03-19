@@ -16,6 +16,7 @@ class Disposicion extends React.Component {
 				<div className="mainContainer__navigation">
 					<picture onClick={()=>this.reload()}>
 					<img 
+					 	style={{cursor:"pointer"}}
 						className="mainContainer__image"
 						src={left} 
 						alt="Foto de perfil"/>
